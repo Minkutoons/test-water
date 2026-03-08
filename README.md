@@ -19,15 +19,43 @@ CreatorFlow is a React Native + Expo starter app that demonstrates **short-video
 - TypeScript
 - React Navigation (stack + bottom tabs)
 
-## Quick start
+## How to see the app
+
+### 1) Install dependencies
 
 ```bash
 npm install
+```
+
+### 2) Start the Expo dev server
+
+```bash
 npm run start
 ```
 
-Then open in Expo Go (iOS/Android) or run web preview with Expo web.
+### 3) Open the app
+
+After the server starts, Expo prints a QR code and options:
+
+- **iOS/Android (recommended):**
+  - Install **Expo Go** on your phone.
+  - Scan the QR code from the terminal/browser.
+- **Web preview:**
+  - Press `w` in the Expo terminal, or run:
+
+```bash
+npm run web
+```
+
+### Optional: run directly on simulators
+
+```bash
+npm run ios
+npm run android
+```
+
+> You need Xcode (for iOS simulator) or Android Studio (for Android emulator) installed locally.
 
 ## Notes
 
-This is a starter template using mock data. Replace the data layer with your backend (e.g., Firebase/Supabase/Node APIs), integrate secure payments (Stripe/RevenueCat), and add moderation/compliance before production.
+This starter uses mock data. For production, replace mocks with a real backend (Firebase/Supabase/Node APIs), integrate secure payments (Stripe/RevenueCat), and add moderation/compliance controls.
