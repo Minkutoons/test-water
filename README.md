@@ -27,7 +27,7 @@ CreatorFlow is a React Native + Expo starter app that demonstrates **short-video
 npm install
 ```
 
-### 2) Start the Expo dev server
+### 2) Start Expo
 
 ```bash
 npm run start
@@ -35,26 +35,40 @@ npm run start
 
 ### 3) Open the app
 
-After the server starts, Expo prints a QR code and options:
-
-- **iOS/Android (recommended):**
-  - Install **Expo Go** on your phone.
-  - Scan the QR code from the terminal/browser.
-- **Web preview:**
-  - Press `w` in the Expo terminal, or run:
+- **Phone (Expo Go):** scan the QR code shown in terminal/browser.
+- **Web:** press `w` in terminal, or run:
 
 ```bash
 npm run web
 ```
 
-### Optional: run directly on simulators
+### Optional simulators
 
 ```bash
 npm run ios
 npm run android
 ```
 
-> You need Xcode (for iOS simulator) or Android Studio (for Android emulator) installed locally.
+> iOS simulator requires Xcode. Android emulator requires Android Studio.
+
+## Troubleshooting (if you cannot see the app)
+
+1. Ensure you are in the project root (`/workspace/test-water`) before running commands.
+2. Verify install completed and `node_modules` exists.
+3. If web fails, make sure these deps are present in `package.json`:
+   - `react-dom`
+   - `react-native-web`
+4. If Metro is stuck, clear cache:
+
+```bash
+npx expo start -c
+```
+
+5. If network/QR on phone fails, try tunnel mode:
+
+```bash
+npx expo start --tunnel
+```
 
 ## Notes
 
